@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Registration Form</title>
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+     <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+     <div class="container">
+          <div class="title mt-5">Registration</div>
+          <form action="#">
+               <div class="user__details">
+                    <div class="input__box">
+                         <span class="details">Fast Name</span>
+                         <input type="text" placeholder="E.g: John" required>
+                    </div>
+                    <div class="input__box">
+                         <span class="details">Last Name</span>
+                         <input type="text" placeholder="Smith" required>
+                    </div>
+                    <div class="input__box">
+                         <span class="details">Email</span>
+                         <input type="email" placeholder="johnsmith@hotmail.com" required>
+                    </div>
+                    <div class="input__box">
+                         <span class="details">Phone Number</span>
+                         <input type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="012-345-6789" required>
+                    </div>
+                    <div class="input__box">
+                         <span class="details">Password</span>
+                         <input type="password" placeholder="********" required>
+                    </div>
+                    
+                     <div class="input__box">
+                         <label for="district">District</label><br>
+                     <select class="form-control" id="district" name="district" required>
+                         <option value="dhaka">Dhaka</option>
+                         <option value="narayanganj">Narayanganj</option>
+                         <option value="chattogram">Chattogram</option>
+                         <option value="barishal">Barishal</option>
+                         <option value="gazipur">Gazipur</option>
+                         <option value="khulna">Khulna</option>
+                         <option value="manijganj">Dhaka</option>
+                         <option value="narsingdi">Narayanganj</option>
+                         <option value="noakhali">Noakhali</option>
+                         <option value="bandarban">Bandarban</option>
+                       </select>
+                     </div>
+                     <div>
+                         <label for="dob">Date of Birth</label><br>
+                         <input class="form-control col-md-8" type="date" id="dob" name="dob" required>
+                     </div>
+                    
+               </div>
+               <div class="gender__details">
+                    <input type="radio" name="gender" id="dot-1">
+                    <input type="radio" name="gender" id="dot-2">
+                    <input type="radio" name="gender" id="dot-3">
+                    <span class="gender__title">Gender</span>
+                    <div class="category">
+                         <label for="dot-1">
+                              <span class="dot one"></span>
+                              <span>Male</span>
+                         </label>
+                         <label for="dot-2">
+                              <span class="dot two"></span>
+                              <span>Female</span>
+                         </label>
+                         <label for="dot-3">
+                              <span class="dot three"></span>
+                              <span>Prefer not to say</span>
+                         </label>
+                    </div>
+               </div>
+               <label class="checkbox-label">
+                    <input type="checkbox" id="terms" name="terms" required>
+                    I agree to the <a href="#">Terms and Conditions</a>
+                </label>
+               <div class="button">
+                    <input type="submit" value="Register">
+               </div>
+          </form>
+     </div>
+</body>
+</html>
